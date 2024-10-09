@@ -1,4 +1,4 @@
-const backendDomain="http://localhost:5005"
+const backendDomain="https://crud-back-zvr6.onrender.com"
 const SummaryApi = {
     profile : {
         url : `${backendDomain}/api/auth/profile`,

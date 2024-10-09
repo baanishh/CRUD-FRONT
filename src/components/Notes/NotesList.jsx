@@ -3,7 +3,7 @@ import { AuthContext } from '../../context/AuthContext';
 import AddNote from './AddNote';
 import EditNote from './EditNote';
 import axios from 'axios';
-const backendDomain="http://localhost:5005";
+const backendDomain="https://crud-back-zvr6.onrender.com";
 
 const NotesList = () => {
     const [notes, setNotes] = useState([]);

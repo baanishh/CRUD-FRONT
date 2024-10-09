@@ -1,6 +1,5 @@
 // src/context/AuthContext.jsx
 import React, { createContext, useState, useEffect } from 'react';
-
 import SummaryApi from '../common/SummaryApi';
 import axios from 'axios';
 

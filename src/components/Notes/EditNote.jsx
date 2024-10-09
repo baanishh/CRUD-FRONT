@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-const backendDomain="http://localhost:5005";
+const backendDomain="https://crud-back-zvr6.onrender.com";
 
 const EditNote = ({ note, onUpdate, onCancel }) => {
     const [form, setForm] = useState({ title: note.title, content: note.content });
@@ -12,10 +12,7 @@ const EditNote = ({ note, onUpdate, onCancel }) => {
     const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        // Check the form data and note ID
-        console.log('Form data:', form);
-        console.log('Note ID:', note._id);
-
+  
         const res = await axios.put(`${backendDomain}/api/notes/${note._id}`, form, {
             withCredentials: true, // To send cookies
         });
